@@ -6,13 +6,19 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    screens: {
-      sm: { min: "200px", max: "767px" },
-      sm_l: { min: "640px" },
-      md: { min: "768px", max: "991px" },
-      md_l: { min: "768px" },
-    },
+    // screens: {
+    //   sm: { min: "200px", max: "767px" },
+    //   sm_l: { min: "640px" },
+    //   md: { min: "768px", max: "991px" },
+    //   md_l: { min: "768px" },
+    // },
     extend: {
+      screens: {
+        // sm: { min: "200px", max: "767px" },
+        sm_l: { min: "640px" },
+        // md: { min: "768px", max: "991px" },
+        md_l: { min: "768px" },
+      },
       colors: {
         gray_52: "#f8f9fa",
         gray_51: "#f9f9f9",
