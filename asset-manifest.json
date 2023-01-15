@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/travelbeta/static/css/main.91691013.css",
-    "main.js": "/travelbeta/static/js/main.3ad1bb9b.js",
+    "main.js": "/travelbeta/static/js/main.ed42642f.js",
     "static/media/RobotoRegular.ttf": "/travelbeta/static/media/RobotoRegular.fc2b5060f7accec5cf74.ttf",
+    "static/media/img_travelbetalogo.png": "/travelbeta/static/media/img_travelbetalogo.a50a70e8e35501bc64a3.png",
     "index.html": "/travelbeta/index.html",
     "main.91691013.css.map": "/travelbeta/static/css/main.91691013.css.map",
-    "main.3ad1bb9b.js.map": "/travelbeta/static/js/main.3ad1bb9b.js.map"
+    "main.ed42642f.js.map": "/travelbeta/static/js/main.ed42642f.js.map"
   },
   "entrypoints": [
     "static/css/main.91691013.css",
-    "static/js/main.3ad1bb9b.js"
+    "static/js/main.ed42642f.js"
   ]
 }
