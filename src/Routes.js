@@ -6,7 +6,6 @@ import HotelsearchresultsTwo from "pages/HotelsearchresultsTwo";
 import HotelsearchresultsOne from "pages/HotelsearchresultsOne";
 import Hotelsearchresults from "pages/Hotelsearchresults";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "pages/Home";
 import NotFound from "pages/NotFound";
 const ProjectRoutes = () => {
   return (
