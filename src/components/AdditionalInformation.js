@@ -1,39 +1,40 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AdditionalInformation = () => {
   return (
     <div className="px-0 lg:px-24">
       <div className="mt-10 flex items-center justify-center space-x-8 px-6 lg:px-0">
         <div className="flex flex-col items-center font-bold">
-          <div className="leading-none flex items-center justify-center Booking_w_sp__1NGoC Booking_text_10__4KSam bg-prim-default text-white rounded-lg">
+          <div className="leading-none flex items-center justify-center bg-prim-default text-white rounded-full w-4 h-4">
             1
           </div>
-          <div className="Booking_text_10__4KSam Booking_mt_1_5__FJmAi text-center">
+          <div className="text-center">
             Room Selected
           </div>
         </div>
         <div className="flex flex-col items-center font-bold">
-          <div className="leading-none flex items-center justify-center Booking_w_sp__1NGoC Booking_text_10__4KSam bg-prim-default text-white rounded-lg">
+          <div className="leading-none flex items-center justify-center bg-prim-default text-white rounded-full w-4 h-4">
             2
           </div>
-          <div className="Booking_text_10__4KSam Booking_mt_1_5__FJmAi text-center">
+          <div className="text-center">
             Additional Information
           </div>
         </div>
         <div className="flex flex-col items-center font-normal">
-          <div className="leading-none flex items-center justify-center Booking_w_sp__1NGoC Booking_text_10__4KSam rounded-lg">
+          <div className="leading-none flex items-center justify-center   rounded-lg">
             3
           </div>
-          <div className="Booking_text_10__4KSam Booking_mt_1_5__FJmAi text-center">
+          <div className="text-center">
             Payment Methods
           </div>
         </div>
         <div className="flex flex-col items-center font-normal">
-          <div className="leading-none flex items-center justify-center Booking_w_sp__1NGoC Booking_text_10__4KSam rounded-lg">
+          <div className="leading-none flex items-center justify-center   rounded-lg">
             4
           </div>
-          <div className="Booking_text_10__4KSam Booking_mt_1_5__FJmAi text-center">
-            Booking Confirmation
+          <div className="  text-center">
+             Confirmation
           </div>
         </div>
       </div>
@@ -50,7 +51,7 @@ const AdditionalInformation = () => {
                 </p>
               </div>
               <div
-                className="py-3 px-2 mt-8 Booking_text_9__33vt_ Booking_line_height_14__2loKU lg:text-xs flex items-center space-x-2"
+                className="py-3 px-2 mt-8   lg:text-xs flex items-center space-x-2"
                 style={{ background: "rgb(255, 237, 196)" }}
               >
                 <svg
@@ -72,7 +73,7 @@ const AdditionalInformation = () => {
               <div className="mt-8 divide-y divide-neutral-400">
                 <div className="pb-8">
                   <div className="flex justify-between items-start">
-                    <div className="w-4/5 Booking_w_308__8rjbO">
+                    <div className="w-4/5 ">
                       <p className="text-sm font-semibold text-neutral-100">
                         Guest Information{" "}
                         <span className="text-red-500">*</span>
@@ -104,181 +105,10 @@ const AdditionalInformation = () => {
                       </svg>
                     </button>
                   </div>
-                  <div className="mt-8 block">
-                    <div className="flex items-center justify-between lg:justify-start">
-                      <h4 className="text-sm text-neutral-100">
-                        Guest 1 : ADULT{" "}
-                        <span className="Booking_text_9__33vt_ leading-none text-neutral-300 ml-2">
-                          (Primary Contact)
-                        </span>
-                      </h4>
-                      <button
-                        className="lg:ml-6 bg-tint-300 text-shade-300 rounded-lg uppercase p-1 lg:p-2 Booking_text_9__33vt_ leading-none"
-                        style={{ fontSize: "0.625rem" }}
-                      >
-                        USE PROFILE INFO
-                      </button>
-                    </div>
-                    <div className="w-full lg:w-full">
-                      <div className="relative h-12 flex items-end mt-4">
-                        <select
-                          name="title"
-                          className="border-b bg-transparent outline-none Booking_input__IsuIi Booking_select__3o4-S text-base text-neutral-100 pb-1 w-full"
-                          required
-                          style={{ borderColor: "rgb(230, 230, 230)" }}
-                        >
-                          <option className="px-0" value={14632}>
-                            Child
-                          </option>
-                          <option className="px-0" value={558}>
-                            Dr.
-                          </option>
-                          <option className="px-0" value={1671}>
-                            Madame
-                          </option>
-                          <option className="px-0" value={74195}>
-                            Mademoiselle
-                          </option>
-                          <option className="px-0" value={9234}>
-                            Messrs.
-                          </option>
-                          <option className="px-0" value={15134}>
-                            Miss
-                          </option>
-                          <option className="px-0" value={74185}>
-                            Monsieur
-                          </option>
-                          <option className="px-0" value={147}>
-                            Mr.
-                          </option>
-                          <option className="px-0" value={149}>
-                            Mrs.
-                          </option>
-                          <option className="px-0" value={148}>
-                            Ms.
-                          </option>
-                          <option className="px-0" value={1328}>
-                            Sir
-                          </option>
-                          <option className="px-0" value={3801}>
-                            Sir/Madam
-                          </option>
-                        </select>
-                        <svg
-                          stroke="currentColor"
-                          fill="currentColor"
-                          strokeWidth={0}
-                          viewBox="0 0 20 20"
-                          className="absolute -right-1 w-7 text-neutral-300"
-                          height={24}
-                          width={24}
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                        <label className="absolute left-0 bottom-1 text-base text-neutral-300 h-6">
-                          Title
-                        </label>
-                      </div>
-                      <div className="relative h-12 flex items-end mt-4">
-                        <input
-                          className="border-b outline-none Booking_input__IsuIi text-base text-neutral-100 pb-1 w-full"
-                          type="text"
-                          name="lastName"
-                          required
-                          defaultValue
-                          style={{ borderColor: "rgb(230, 230, 230)" }}
-                        />
-                        <label className="absolute left-0 bottom-1 text-base text-neutral-300 h-6">
-                          Surname
-                        </label>
-                      </div>
-                      <div className="relative h-12 flex items-end mt-4">
-                        <input
-                          className="border-b outline-none Booking_input__IsuIi text-base text-neutral-100 pb-1 w-full"
-                          type="text"
-                          name="firstName"
-                          required
-                          defaultValue
-                          style={{ borderColor: "rgb(230, 230, 230)" }}
-                        />
-                        <label className="absolute left-0 bottom-1 text-base text-neutral-300 h-6">
-                          First Name
-                        </label>
-                      </div>
-                      <div className="relative h-12 flex items-end mt-4">
-                        <input
-                          className="border-b outline-none Booking_input__IsuIi text-base text-neutral-100 pb-1 w-full"
-                          type="email"
-                          name="email"
-                          required
-                          defaultValue
-                          style={{ borderColor: "rgb(230, 230, 230)" }}
-                        />
-                        <label className="absolute cursor-text w-full left-0 bottom-1 text-base text-neutral-300 h-6 transition-all duration-200 ease-in-out">
-                          Email Address
-                        </label>
-                      </div>
-                      <div className="relative h-12 flex items-end mt-4">
-                        <input
-                          className="border-b outline-none Booking_input__IsuIi text-base text-neutral-100 pb-1 w-full"
-                          type="text"
-                          name="phone"
-                          required
-                          defaultValue
-                          style={{ borderColor: "rgb(230, 230, 230)" }}
-                        />
-                        <label className="absolute cursor-text w-full left-0 bottom-1 text-base text-neutral-300 h-6 transition-all duration-200 ease-in-out">
-                          Phone Number
-                        </label>
-                      </div>
-                      <div className="mt-6 py-1 flex items-center">
-                        <div className="flex items-center">
-                          <input
-                            type="checkbox"
-                            id="offers"
-                            className="opacity-0 absolute h-5 w-5"
-                            defaultValue="Yes"
-                          />
-                          <div className="bg-white border-2 border-gray-500 w-5 h-5 flex flex-shrink-0 justify-center items-center mr-3 focus-within:border-blue-500">
-                            <svg
-                              className="fill-current hidden w-3 h-3 text-white pointer-events-none"
-                              version="1.1"
-                              viewBox="0 0 17 12"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <g fill="none" fillRule="evenodd">
-                                <g
-                                  transform="translate(-9 -11)"
-                                  fill="#FFFFFF"
-                                  fillRule="nonzero"
-                                >
-                                  <path d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z" />
-                                </g>
-                              </g>
-                            </svg>
-                          </div>
-                          <label
-                            htmlFor="offers"
-                            className="select-none w-full flex items-center justify-between"
-                          >
-                            {" "}
-                          </label>
-                        </div>
-                        <label className="text-xs leading-4 text-neutral-300">
-                          Please send me travel deals and special offers
-                        </label>
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <div className="py-8">
                   <div className="flex justify-between items-start">
-                    <div className="w-4/5 Booking_w_308__8rjbO">
+                    <div className="w-4/5 ">
                       <p className="text-sm font-semibold text-neutral-100">
                         Reservation Terms and Cancellation Policy
                       </p>
@@ -292,6 +122,21 @@ const AdditionalInformation = () => {
                         bookings are non-refundable/non-amendable once payment
                         is made, hence, no amendment or cancellation is
                         permitted.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="py-8">
+                  <div className="flex justify-between items-start">
+                    <div className="w-4/5 ">
+                      <p className="text-sm font-semibold text-neutral-100">
+                        Hotel Policies
+                      </p>
+                      <p className="text-neutral-300 text-xs leading-5 mt-2">
+                        CHECK-IN INSTRUCTION
+                      </p>
+                      <p className="text-neutral-300 text-xs leading-5 mt-2">
+                        Check-in time is 3pm and check-out time is 12pm, but this may vary depending on the hotel. Early check-in or late check-out is not guaranteed but subject to availability.
                       </p>
                     </div>
                   </div>
@@ -391,7 +236,7 @@ const AdditionalInformation = () => {
                     <input
                       type="checkbox"
                       id="n1"
-                      className="opacity-0 absolute h-5 w-5"
+                      className="absolute h-5 w-5"
                       defaultValue={1}
                     />
                     <div className="bg-white border-2 border-gray-500 w-5 h-5 flex flex-shrink-0 justify-center items-center mr-3 focus-within:border-blue-500">
@@ -428,39 +273,21 @@ const AdditionalInformation = () => {
                   </p>
                 </div>
                 <div className="mt-6 flex space-x-6">
-                  <button className="px-6 py-4 text-base leading-none border border-neutral-100 rounded font-bold">
+                <Link className="px-6 py-4 text-base leading-none border border-neutral-900 rounded font-bold text-center" to="/hotelsearchresultsthree"><span>Back</span></Link>
+                  {/* <button className="px-6 py-4 text-base leading-none border border-neutral-900 rounded font-bold">
                     Back
-                  </button>
-                  <button className="px-6 py-4 text-base leading-none rounded bg-neutral-400 font-bold flex items-center space-x-4">
+                  </button> */}
+                  <Link className="px-6 py-4 text-base leading-none rounded bg-neutral-300 font-bold flex items-center space-x-4 text-center" to="/paymentmethodsbankaccount"><span>Continue</span></Link>
+                  {/* <button className="px-6 py-4 text-base leading-none rounded bg-neutral-300 font-bold flex items-center space-x-4">
                     <span>Continue</span>
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth={0}
-                      viewBox="0 0 20 20"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="p-8 w-full">
-          <div
-            className="flex w-full items-center h-32 bg-white"
-            style={{
-              boxShadow: "rgba(109, 109, 109, 0.14) 0px 14px 25px -8px",
-            }}
-          >
+          <div className="flex w-full items-center h-32 bg-white" style={{ boxShadow: "rgba(109, 109, 109, 0.14) 0px 14px 25px -8px",}}>
             <div className="w-2/5">
               <img
                 src="https://res.cloudinary.com/diapyzzws/image/upload/v1640205275/Website%20Images/0bfdb948569ff4ec3fa7d33be114b870.jpg"
@@ -509,16 +336,17 @@ const AdditionalInformation = () => {
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
                   </svg>
                 </span>
-                <span className="Booking_text_9l__r7JTg leading-3 text-neutral-200 ml-1.5">
+                <span className=" leading-3 text-neutral-200 ml-1.5">
                   639 Harrow Road ; Kensal Green
                 </span>
               </div>
             </div>
           </div>
+          <div className="text-center  lg:text-right text-[#010080] text-xs font-normal lg:mt-1 pt-6">View Hotel Details</div>
           <div className="bg-white mt-10 lg:mt-16 px-6">
             <div className="py-6 border-b border-neutral-400">
               <h2 className="text-sm lg:text-2xl leading-none text-neutral-100 font-semibold">
-                basic shared dormitory, shared bathroom (8 bed female dorm)
+              Single standard Bed and Breakfast
               </h2>
             </div>
             <div className="space-y-6 py-6 pb-8 border-b border-neutral-400">
@@ -544,13 +372,13 @@ const AdditionalInformation = () => {
                 <p className="text-sm leading-none text-neutral-300">
                   Check-In
                 </p>
-                <p className="text-sm leading-none text-black">Jan 14 2023</p>
+                <p className="text-sm leading-none text-black">Dec 30, 2021</p>
               </div>
               <div className="space-y-2.5">
                 <p className="text-sm leading-none text-neutral-300">
                   Check-Out
                 </p>
-                <p className="text-sm leading-none text-black">Jan 17 2023</p>
+                <p className="text-sm leading-none text-black">Dec 31, 2021</p>
               </div>
             </div>
             <div className="py-6 border-b border-neutral-400">
@@ -563,7 +391,7 @@ const AdditionalInformation = () => {
                 <p className="text-sm leading-none text-neutral-100">
                   1 Room x 3 nights
                 </p>
-                <p className="text-sm leading-none text-neutral-100">₦47,817</p>
+                <p className="text-sm leading-none text-neutral-100">₦1,200,000</p>
               </div>
               <div className="flex justify-between">
                 <p className="text-sm leading-none text-neutral-100">
@@ -575,7 +403,7 @@ const AdditionalInformation = () => {
                 <p className="text-sm leading-none text-neutral-100">
                   Total Fare
                 </p>
-                <p className="text-sm leading-none text-neutral-100">₦47,817</p>
+                <p className="text-sm leading-none text-neutral-100">₦1,200,000</p>
               </div>
             </div>
             <div className="py-6">
@@ -584,7 +412,7 @@ const AdditionalInformation = () => {
                   Total:
                 </p>
                 <p className="text-xl leading-none text-neutral-100 font-bold">
-                  ₦47,817
+                  ₦1,200,000
                 </p>
               </div>
             </div>

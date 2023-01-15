@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SingleBook = () => {
   return (
@@ -305,9 +306,9 @@ const SingleBook = () => {
           <p className="hidden lg:block text-neutral-300 text-sm leading-none mt-14">
             ₦47,817 for 3 nights 1 room
           </p>
-          <button className="py-4 px-10 bg-cta text-white font-bold text-sm leading-none rounded lg:mt-6">
+          <a href="#select_room"  className="py-4 px-10 bg-cta text-white font-bold text-sm leading-none rounded lg:mt-6">
             Select Room
-          </button>
+          </a>
         </div>
       </div>
 
@@ -337,7 +338,7 @@ const SingleBook = () => {
         />
       </div>
       <div className="mt-10 lg:mt-20">
-        <h3 className="text-xl leading-none text-neutral-100 font-semibold">
+        <h3 id="select_room" className="text-xl leading-none text-neutral-100 font-semibold">
           Kindly choose room
         </h3>
         <div className="mt-10 lg:mt-16 space-y-6 flex flex-col">
@@ -403,9 +404,7 @@ const SingleBook = () => {
                   3 nights &amp; 1 room
                 </p>
               </div>
-              <button className="py-4 px-11 bg-cta text-white font-bold text-sm leading-none rounded lg:rounded-none lg:mt-6">
-                Book
-              </button>
+              <Link className="py-4 px-11 bg-cta text-white font-bold text-sm leading-none rounded lg:rounded-none lg:mt-6 text-center" to="/additionalinformation">Book</Link>
             </div>
           </div>
           <div className="flex lg:grid flex-col lg:grid-cols-7 h-52 items-center">
@@ -417,7 +416,7 @@ const SingleBook = () => {
             </div>
             <div className="lg:col-span-3 w-full h-full lg:h-52 bg-white p-6 lg:p-8">
               <h2 className="text-base lg:text-2xl font-semibold text-neutral-100">
-                Triple Room with Shared Bathroom
+                1 Person in 12-Bed Dormitory - Mixed
               </h2>
               <div className="mt-6 lg:mt-6 flex items-center space-x-2">
                 <span>
@@ -464,15 +463,13 @@ const SingleBook = () => {
             <div className="lg:col-span-2 w-full flex flex-row lg:flex-col items-center bg-light-blue h-full lg:h-52 px-6 lg:px-8 py-6 lg:py-7">
               <div>
                 <h3 className="text-2xl lg:text-3xl text-neutral-100 leading-none font-semibold">
-                  ₦251,502
+                  ₦62,645
                 </h3>
                 <p className="mt-1 lg:mt-2 text-xs lg:text-base leading-none font-semibold text-neutral-300 lg:text-neutral-100">
                   3 nights &amp; 1 room
                 </p>
               </div>
-              <button className="py-4 px-11 bg-cta text-white font-bold text-sm leading-none rounded lg:rounded-none lg:mt-6">
-                Book
-              </button>
+              <Link className="py-4 px-11 bg-cta text-white font-bold text-sm leading-none rounded lg:rounded-none lg:mt-6 text-center" to="/additionalinformation">Book</Link>
             </div>
           </div>
           <div className="flex lg:grid flex-col lg:grid-cols-7 h-52 items-center">
@@ -484,7 +481,7 @@ const SingleBook = () => {
             </div>
             <div className="lg:col-span-3 w-full h-full lg:h-52 bg-white p-6 lg:p-8">
               <h2 className="text-base lg:text-2xl font-semibold text-neutral-100">
-                standard triple room
+                1 Person in 12-Bed Dormitory - Mixed
               </h2>
               <div className="mt-6 lg:mt-6 flex items-center space-x-2">
                 <span>
@@ -531,15 +528,13 @@ const SingleBook = () => {
             <div className="lg:col-span-2 w-full flex flex-row lg:flex-col items-center bg-light-blue h-full lg:h-52 px-6 lg:px-8 py-6 lg:py-7">
               <div>
                 <h3 className="text-2xl lg:text-3xl text-neutral-100 leading-none font-semibold">
-                  ₦289,840
+                  ₦62,645
                 </h3>
                 <p className="mt-1 lg:mt-2 text-xs lg:text-base leading-none font-semibold text-neutral-300 lg:text-neutral-100">
                   3 nights &amp; 1 room
                 </p>
               </div>
-              <button className="py-4 px-11 bg-cta text-white font-bold text-sm leading-none rounded lg:rounded-none lg:mt-6">
-                Book
-              </button>
+              <Link className="py-4 px-11 bg-cta text-white font-bold text-sm leading-none rounded lg:rounded-none lg:mt-6 text-center" to="/additionalinformation">Book</Link>
             </div>
           </div>
         </div>
