@@ -1,9 +1,43 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Img, Text, Button, Input, SelectBox, Grid, List } from "components";
-
+import { Link } from "react-router-dom";
+import data from './hotel.json';
 const FilterPost = () => {
+    const [items,setItems] = React.useState([]);
+    const [hotels,setHostels] = React.useState([]);
+    React.useEffect(() => {
+        let items = [];
+        for (let i = 0; i < 5; i++) {
+            items.push(<span key={i}>
+              <svg
+                stroke="#FFB712"
+                fill="#FFB712"
+                strokeWidth={0}
+                viewBox="0 0 20 20"
+                className="text-cta"
+                height={20}
+                width={20}
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </span>);
+        }
+        setItems(items);
+
+        // setHostels(data.users.map((item, index) => <li key={index}>{item}</li>));
+        /* fetch('hotel.json')
+        .then(response => response.json())
+        .then(data => {
+          console.log(data)
+          setHostels(data.map((item, index) => <li key={index}>{item}</li>));
+        }); */
+    }, []);
+
   return (
+    
     <div className="flex flex-col lg:px-24 lg:mt-24 mb-8 lg:flex-row lg:space-x-8">
+      
       <div className="w-full lg:flex px-0 lg:w-1/4 hidden">
         <div className="metropolis w-full sticky">
           <div className="p-8 flex w-full justify-between items-center bg-[#d7e7ff]">
@@ -24,7 +58,7 @@ const FilterPost = () => {
                   type="text"
                   className="bg-neutral-100 text-base placeholder-neutral-300 text-neutral-300 leading-none w-full py-5 pr-4 pl-8 border border-solid border-[#CED4DA]"
                   placeholder="Enter hotel name"
-                  defaultValue
+                  defaultValue=""
                 />
                 <button className="absolute left-3 text-lg text-neutral-300">
                   <svg
@@ -860,7 +894,8 @@ const FilterPost = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col space-y-6 mb-10">
+        {data.hotels.map((hotel, index) => (
+        <div key={index} className="flex flex-col space-y-6 mb-10">
           <div className="flex flex-col lg:flex-row items-center shadow-sm h-fit">
             <div className="w-full lg:w-4/12">
               <div className="carousel">
@@ -926,80 +961,11 @@ const FilterPost = () => {
             </div>
             <div className="w-full lg:w-5/12 h-full bg-white p-6 lg:p-8">
               <h2 className="text-xl leading-none font-semibold text-neutral-100">
-                Hostel 639
+                {hotel.name}
               </h2>
               <div className="flex items-center space-x-2 mt-2">
                 <div className="flex items-center space-x-1">
-                  <span>
-                    <svg
-                      stroke="#FFB712"
-                      fill="#FFB712"
-                      strokeWidth={0}
-                      viewBox="0 0 20 20"
-                      className="text-cta"
-                      height={20}
-                      width={20}
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  </span>
-                  <span>
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth={0}
-                      viewBox="0 0 20 20"
-                      className="text-gray-300"
-                      height={20}
-                      width={20}
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  </span>
-                  <span>
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth={0}
-                      viewBox="0 0 20 20"
-                      className="text-gray-300"
-                      height={20}
-                      width={20}
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  </span>
-                  <span>
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth={0}
-                      viewBox="0 0 20 20"
-                      className="text-gray-300"
-                      height={20}
-                      width={20}
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  </span>
-                  <span>
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth={0}
-                      viewBox="0 0 20 20"
-                      className="text-gray-300"
-                      height={20}
-                      width={20}
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  </span>
+                  {items}
                 </div>
                 <span>(1)</span>
               </div>
@@ -1019,7 +985,7 @@ const FilterPost = () => {
                   </svg>
                 </span>
                 <p className="w-11/12 text-xs lg:text-sm text-neutral-200">
-                  639 Harrow Road ; Kensal Green
+                {hotel.address}
                 </p>
               </div>
               <ul className="grid grid-cols-3 gap-y-2 gap-x-0.5 mt-7 lg:mt-4">
@@ -1084,21 +1050,24 @@ const FilterPost = () => {
             <div className="w-full lg:w-3/12 flex flex-row justify-between lg:flex-col items-center bg-[#D7E7FF] h-full px-6 lg:px-8 py-6 lg:py-9 ">
               <div>
                 <h3 className="text-2xl lg:text-3xl text-neutral-100 leading-none font-semibold">
-                  ₦48,500
+                {hotel.amount}
                 </h3>
                 <p className="mt-1 lg:mt-2 text-xs lg:text-base leading-none font-semibold text-neutral-800 lg:text-neutral-800">
-                  Per 3 nights &amp; room
+                {hotel.how_long}
                 </p>
               </div>
               <p className="hidden lg:block text-neutral-200 text-xs leading-none mt-10">
-                ₦48,500 for 3 nights 1 room
+              {hotel.amount} for {hotel.how_long}
               </p>
-              <button className="py-4 w-40 lg:w-full bg-cta text-white font-bold text-sm leading-none rounded lg:rounded-none lg:mt-6 bg-yellow-500">
+              <Link className="py-4 w-40 lg:w-full bg-cta text-white font-bold text-sm leading-none rounded lg:rounded-none lg:mt-6 bg-yellow-500 text-center" to="/hotelsearchresultsthree">Book</Link>
+              {/* <button className="py-4 w-40 lg:w-full bg-cta text-white font-bold text-sm leading-none rounded lg:rounded-none lg:mt-6 bg-yellow-500">
                 Book
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
+      ))}
+        
       </div>
     </div>
 

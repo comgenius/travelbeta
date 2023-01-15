@@ -12,7 +12,7 @@ const ProjectRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Hotelsearchresults />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/hotelsearchresults" element={<Hotelsearchresults />} />
         <Route
