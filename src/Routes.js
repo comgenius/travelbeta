@@ -12,6 +12,7 @@ const ProjectRoutes = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Hotelsearchresults />} />
+        <Route path="/travelbeta" element={<Hotelsearchresults />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/hotelsearchresults" element={<Hotelsearchresults />} />
         <Route
