@@ -342,199 +342,159 @@ const SingleBook = () => {
           Kindly choose room
         </h3>
         <div className="mt-10 lg:mt-16 space-y-6 flex flex-col">
-          <div className="flex lg:grid flex-col lg:grid-cols-7 h-52 items-center">
-            <div className="lg:col-span-2 w-full h-full">
+          <div className="flex flex-col space-y-6 mb-10">
+            <div className="flex flex-col lg:flex-row items-center shadow-sm h-fit">
+              <div className="w-full lg:w-4/12 lg:h-64">
               <img
-                src="https://us.dotwconnect.com/poze_hotel/15/1551558/P1yOyhkn_71978f270694c14541f78503ede68acb.jpg"
-                className="w-full h-52 object-cover"
+                src="https://us.dotwconnect.com/poze_hotel/16/1655428/29cVhc58_d2b5ca33bd970f64a6301fa75ae2eb22.png"
+                className="w-full object-cover h-64"
               />
-            </div>
-            <div className="lg:col-span-3 w-full h-full lg:h-52 bg-white p-6 lg:p-8">
-              <h2 className="text-base lg:text-2xl font-semibold text-neutral-100">
-                1 Person in 12-Bed Dormitory - Mixed
-              </h2>
-              <div className="mt-6 lg:mt-6 flex items-center space-x-2">
-                <span>
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth={0}
-                    viewBox="0 0 24 24"
-                    height={20}
-                    width={20}
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
-                  </svg>
-                </span>
-                <p className="w-11/12 text-xs text-neutral-200">
-                  1 guests maximum
-                </p>
               </div>
-              <div className="mt-6 lg:mt-2 flex items-center space-x-2">
-                <span>
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth={0}
-                    viewBox="0 0 20 20"
-                    height={20}
-                    width={20}
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </span>
-                <p className="w-11/12 text-xs text-neutral-200">
-                  Non Refundable
-                </p>
+              <div className="w-full lg:w-5/12 h-full lg:h-64 bg-white p-6 lg:p-8">
+                <h2 className="text-xl leading-none font-semibold text-neutral-100">
+                  1 Person in 12-Bed Dormitory - Mixed
+                </h2>
+                <div className="mt-6 lg:mt-6 flex items-center space-x-2">
+                  <span>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth={0}
+                      viewBox="0 0 24 24"
+                      height={20}
+                      width={20}
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                    </svg>
+                  </span>
+                  <p className="w-11/12 text-xs text-neutral-200">
+                    1 guests maximum
+                  </p>
+                </div>
+                <div className="mt-6 lg:mt-2 flex items-center space-x-2">
+                  <span>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth={0}
+                      viewBox="0 0 20 20"
+                      height={20}
+                      width={20}
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <p className="w-11/12 text-xs text-neutral-200">
+                    Refundable
+                  </p>
+                </div>
+                <div className="mt-6 lg:mt-2 flex items-center space-x-2">
+                  <div>Rooms</div>
+                  <div className="w-4 bg-neutral-200 text-center text-sm">1</div>
+                </div>
               </div>
-            </div>
-            <div className="lg:col-span-2 w-full flex flex-row lg:flex-col items-center bg-light-blue h-full lg:h-52 px-6 lg:px-8 py-6 lg:py-7">
-              <div>
+              <div className="w-full lg:w-3/12 flex flex-row justify-between lg:flex-col items-center bg-[#D7E7FF] h-full lg:h-64 px-6 lg:px-8 py-6 lg:py-9 ">
+                <div className="w-full lg:text-right">
                 <h3 className="text-2xl lg:text-3xl text-neutral-100 leading-none font-semibold">
-                  ₦62,645
-                </h3>
-                <p className="mt-1 lg:mt-2 text-xs lg:text-base leading-none font-semibold text-neutral-300 lg:text-neutral-100">
-                  3 nights &amp; 1 room
+                    ₦62,645
+                  </h3>
+                  <p className="mt-1 lg:mt-2 text-xs lg:text-xs leading-none font-semibold text-neutral-300 lg:text-neutral-900">
+                    Per night &amp;  room
+                  </p>
+                </div>
+                <p className="hidden lg:block text-neutral-200 text-xs text-right leading-none mt-4 w-full">
+                  ₦62,645 for 1 night  1 room
                 </p>
+                <p className="hidden lg:block text-neutral-200 text-xs text-right leading-none mt-1 w-full">
+                  Includes taxes and fees
+                </p>
+                <Link className="py-4 px-11 bg-cta text-white font-bold text-sm leading-none rounded lg:rounded-none lg:mt-6 text-center" to="/additionalinformation">Book</Link>
               </div>
-              <Link className="py-4 px-11 bg-cta text-white font-bold text-sm leading-none rounded lg:rounded-none lg:mt-6 text-center" to="/additionalinformation">Book</Link>
             </div>
-          </div>
-          <div className="flex lg:grid flex-col lg:grid-cols-7 h-52 items-center">
-            <div className="lg:col-span-2 w-full h-full">
+            <div className="flex flex-col lg:flex-row items-center shadow-sm h-fit">
+              <div className="w-full lg:w-4/12 lg:h-64">
               <img
-                src="https://us.dotwconnect.com/poze_hotel/15/1551558/P1yOyhkn_71978f270694c14541f78503ede68acb.jpg"
-                className="w-full h-52 object-cover"
+                src="https://us.dotwconnect.com/poze_hotel/16/1655428/29cVhc58_d2b5ca33bd970f64a6301fa75ae2eb22.png"
+                className="w-full object-cover h-64"
               />
-            </div>
-            <div className="lg:col-span-3 w-full h-full lg:h-52 bg-white p-6 lg:p-8">
-              <h2 className="text-base lg:text-2xl font-semibold text-neutral-100">
-                1 Person in 12-Bed Dormitory - Mixed
-              </h2>
-              <div className="mt-6 lg:mt-6 flex items-center space-x-2">
-                <span>
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth={0}
-                    viewBox="0 0 24 24"
-                    height={20}
-                    width={20}
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
-                  </svg>
-                </span>
-                <p className="w-11/12 text-xs text-neutral-200">
-                  1 guests maximum
-                </p>
               </div>
-              <div className="mt-6 lg:mt-2 flex items-center space-x-2">
-                <span>
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth={0}
-                    viewBox="0 0 20 20"
-                    height={20}
-                    width={20}
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </span>
-                <p className="w-11/12 text-xs text-neutral-200">
-                  Non Refundable
-                </p>
+              <div className="w-full lg:w-5/12 h-full lg:h-64 bg-white p-6 lg:p-8">
+                <h2 className="text-xl leading-none font-semibold text-neutral-100">
+                  1 Person in 12-Bed Dormitory - Mixed
+                </h2>
+                <div className="mt-6 lg:mt-6 flex items-center space-x-2">
+                  <span>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth={0}
+                      viewBox="0 0 24 24"
+                      height={20}
+                      width={20}
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                    </svg>
+                  </span>
+                  <p className="w-11/12 text-xs text-neutral-200">
+                    1 guests maximum
+                  </p>
+                </div>
+                <div className="mt-6 lg:mt-2 flex items-center space-x-2">
+                  <span>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth={0}
+                      viewBox="0 0 20 20"
+                      height={20}
+                      width={20}
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <p className="w-11/12 text-xs text-neutral-200">
+                    Refundable
+                  </p>
+                </div>
+                <div className="mt-6 lg:mt-2 flex items-center space-x-2">
+                  <div>Rooms</div>
+                  <div className="w-4 bg-neutral-200 text-center text-sm">1</div>
+                </div>
               </div>
-            </div>
-            <div className="lg:col-span-2 w-full flex flex-row lg:flex-col items-center bg-light-blue h-full lg:h-52 px-6 lg:px-8 py-6 lg:py-7">
-              <div>
+              <div className="w-full lg:w-3/12 flex flex-row justify-between lg:flex-col items-center bg-[#D7E7FF] h-full lg:h-64 px-6 lg:px-8 py-6 lg:py-9 ">
+                <div className="w-full lg:text-right">
                 <h3 className="text-2xl lg:text-3xl text-neutral-100 leading-none font-semibold">
-                  ₦62,645
-                </h3>
-                <p className="mt-1 lg:mt-2 text-xs lg:text-base leading-none font-semibold text-neutral-300 lg:text-neutral-100">
-                  3 nights &amp; 1 room
+                    ₦62,645
+                  </h3>
+                  <p className="mt-1 lg:mt-2 text-xs lg:text-xs leading-none font-semibold text-neutral-300 lg:text-neutral-900">
+                    Per night &amp;  room
+                  </p>
+                </div>
+                <p className="hidden lg:block text-neutral-200 text-xs text-right leading-none mt-4 w-full">
+                  ₦62,645 for 1 night  1 room
                 </p>
-              </div>
-              <Link className="py-4 px-11 bg-cta text-white font-bold text-sm leading-none rounded lg:rounded-none lg:mt-6 text-center" to="/additionalinformation">Book</Link>
-            </div>
-          </div>
-          <div className="flex lg:grid flex-col lg:grid-cols-7 h-52 items-center">
-            <div className="lg:col-span-2 w-full h-full">
-              <img
-                src="https://us.dotwconnect.com/poze_hotel/15/1551558/P1yOyhkn_71978f270694c14541f78503ede68acb.jpg"
-                className="w-full h-52 object-cover"
-              />
-            </div>
-            <div className="lg:col-span-3 w-full h-full lg:h-52 bg-white p-6 lg:p-8">
-              <h2 className="text-base lg:text-2xl font-semibold text-neutral-100">
-                1 Person in 12-Bed Dormitory - Mixed
-              </h2>
-              <div className="mt-6 lg:mt-6 flex items-center space-x-2">
-                <span>
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth={0}
-                    viewBox="0 0 24 24"
-                    height={20}
-                    width={20}
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
-                  </svg>
-                </span>
-                <p className="w-11/12 text-xs text-neutral-200">
-                  1 guests maximum
+                <p className="hidden lg:block text-neutral-200 text-xs text-right leading-none mt-1 w-full">
+                  Includes taxes and fees
                 </p>
+                <div>
+                  <Link className="py-4 px-11 bg-cta text-white font-bold text-sm leading-none rounded lg:rounded-none lg:mt-6 text-center" to="/additionalinformation">Book</Link>
+                </div>
+                
               </div>
-              <div className="mt-6 lg:mt-2 flex items-center space-x-2">
-                <span>
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth={0}
-                    viewBox="0 0 20 20"
-                    height={20}
-                    width={20}
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </span>
-                <p className="w-11/12 text-xs text-neutral-200">
-                  Non Refundable
-                </p>
-              </div>
-            </div>
-            <div className="lg:col-span-2 w-full flex flex-row lg:flex-col items-center bg-light-blue h-full lg:h-52 px-6 lg:px-8 py-6 lg:py-7">
-              <div>
-                <h3 className="text-2xl lg:text-3xl text-neutral-100 leading-none font-semibold">
-                  ₦62,645
-                </h3>
-                <p className="mt-1 lg:mt-2 text-xs lg:text-base leading-none font-semibold text-neutral-300 lg:text-neutral-100">
-                  3 nights &amp; 1 room
-                </p>
-              </div>
-              <Link className="py-4 px-11 bg-cta text-white font-bold text-sm leading-none rounded lg:rounded-none lg:mt-6 text-center" to="/additionalinformation">Book</Link>
             </div>
           </div>
         </div>
